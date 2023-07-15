@@ -1,0 +1,35 @@
+@use 'config/variaveis';
+
+@mixin alinhamento() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+}
+
+
+header {
+    background-color:variaveis.$corsecundaria;
+    position: sticky;
+    top: 0;
+    left: 0;
+    @include alinhamento();
+    
+
+        .menu {
+            display: flex;
+
+            li {
+                font-weight: bold;
+                margin-left: 24px;
+
+                a {
+                    color: variaveis.$cortexto;
+                    text-decoration: none;
+                }
+            }
+        }
+    
+
+}
+

@@ -1,0 +1,1 @@
+for(var images=document.getElementsByClassName("imagens"),i=0;i<images.length;i++)images[i].onclick=function(){this.classList.add("hidden")};
